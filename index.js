@@ -22,7 +22,7 @@ function makeBooking() {
 
     $('#loader').addClass('show');
 
-    let client = "Augustine"
+    let client = $('#customerName').val()
         //var ref = firebase.database().ref('munchbowOrders');
     let booking = {
         "id": client.substring(0, 2) + Math.floor(Math.random() * 10000000 + 1),
